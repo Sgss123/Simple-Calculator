@@ -17,7 +17,7 @@ namespace SimpleCalc
             InitializeComponent();
         }
 
-        double num1,
+        int num1,
             num2,
             result;
 
@@ -28,32 +28,32 @@ namespace SimpleCalc
 
         private void button1_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(textBox1.Text);
-            num2 = Convert.ToDouble(textBox2.Text);
+            num1 = Convert.ToInt32(textBox1.Text);
+            num2 = Convert.ToInt32(textBox2.Text);
             result = num1 + num2;
             label3.Text = result.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(textBox1.Text);
-            num2 = Convert.ToDouble(textBox2.Text);
+            num1 = Convert.ToInt32(textBox1.Text);
+            num2 = Convert.ToInt32(textBox2.Text);
             result = num1 - num2;
             label3.Text = result.ToString();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(textBox1.Text);
-            num2 = Convert.ToDouble(textBox2.Text);
+            num1 = Convert.ToInt32(textBox1.Text);
+            num2 = Convert.ToInt32(textBox2.Text);
             result = num1 * num2;
             label3.Text = result.ToString();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            num1 = Convert.ToDouble(textBox1.Text);
-            num2 = Convert.ToDouble(textBox2.Text);
+            num1 = Convert.ToInt32(textBox1.Text);
+            num2 = Convert.ToInt32(textBox2.Text);
             try
             {
                 result = num1 / num2;
